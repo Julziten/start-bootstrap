@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background: rgba(254, 197, 3, 0.8);
+}
+
+*::selection {
+  background: rgba(254, 197, 3, 0.8);
+}
+
+header {
+  width: 100%;
+}
+header .bt-menu {
+  display: none;
+}
+header nav {
+  background-color: #222;
+  overflow: hidden;
+  line-height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 4500;
+}
+header nav h1.brand {
+  font-family: 'Kaushan Script', cursive;
+  display: inline-block;
+  margin-left: 70px;
+  font-size: 25px;
+}
+header nav h1.brand a {
+  color: #fec503;
+}
+header nav h1.brand a:hover {
+  text-decoration: none;
+}
+header nav ul.navigation {
+  float: right;
+  clear: left;
+  margin-right: 70px;
+  margin-bottom: 0;
+}
+header nav ul.navigation li {
+  display: inline-block;
+  margin-bottom: none;
+}
+header nav ul.navigation li a {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 10px;
+  -webkit-transition: color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
+}
+header nav ul.navigation li a:hover {
+  text-decoration: none;
+  color: #fec503;
+}
+header .intro-header {
+  height: 700px;
+  color: #fff;
+  background-color: transparent;
+  background-image: url(../img/header-bg.jpg);
+  background-position: 20% 20%;
+  background-size: cover;
+  margin-top: 0;
+  border: 1px solid transparent;
+}
+header .intro-header .text-intro {
+  text-align: center;
+  padding: 250px 0;
+}
+header .intro-header .text-intro h1 {
+  font-family: "Droid Serif";
+  font-size: 2em;
+  font-style: italic;
+}
+header .intro-header .text-intro p {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 700;
+}
+header .intro-header .text-intro .bt-intro {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: #fed136;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+}
+header .intro-header .text-intro .bt-intro:hover {
+  background-color: #fec503;
+}
+
+#services {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+#services .services-title {
+  text-align: center;
+  color: #444;
+  margin: 7% 0;
+}
+#services .services-title h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+#services .services-title p {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1.2em;
+}
+#services .services-item {
+  text-align: center;
+}
+#services .services-item .services-icon {
+  font-size: 5em;
+  color: #FFF;
+  background-color: #fec503;
+  padding: 30px;
+  border-radius: 100px;
+}
+#services .services-item .fa-lock {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+#services .services-item h3 {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+}
+#services .services-item p {
+  font-family: "Droid Serif";
+  font-size: 1em;
+  color: #787878;
+}
+
+#portfolio {
+  background-color: #EEE;
+  padding-bottom: 100px;
+  z-index: 2;
+}
+#portfolio .portfolio-title {
+  text-align: center;
+  color: #444;
+  margin: 7% 0;
+}
+#portfolio .portfolio-title h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+#portfolio .portfolio-title p {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1.2em;
+}
+#portfolio .portfolio-item-link {
+  position: relative;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  background-color: #FFF;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin-top: 0;
+  font-family: "Montserrat";
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif";
+  font-style: italic;
+}
+#portfolio .portfolio-item img {
+  margin-top: 20px;
+}
+
+#about {
+  background-color: #FFF;
+  padding-bottom: 100px;
+}
+#about .about-title {
+  text-align: center;
+  color: #444;
+  margin: 7% 0;
+}
+#about .about-title h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+#about .about-title p {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1.2em;
+}
+#about ul.history {
+  list-style: none;
+  overflow: hidden;
+}
+#about ul.history .img-history {
+  text-align: center;
+}
+#about ul.history .img-history .img-circle {
+  border: solid 8px #EEE;
+}
+#about ul.history .history-panel {
+  position: relative;
+  bottom: 220px;
+  width: 41%;
+  text-align: right;
+  padding: 0 50px 0 50px;
+}
+#about ul.history .history-inverted {
+  text-align: left;
+  float: right;
+}
+#about ul.history li {
+  position: relative;
+}
+#about ul.history li .title-history h3, #about ul.history li .title-history h4 {
+  font-family: "Montserrat";
+}
+#about ul.history li .text-history p {
+  font-family: "Roboto Slab";
+  line-height: 25px;
+}
+#about ul.history:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+#team {
+  background-color: #EEE;
+  text-align: center;
+}
+#team .team-title {
+  text-align: center;
+  color: #444;
+  margin: 7% 0;
+}
+#team .team-title h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+#team .team-title p {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1.2em;
+}
+#team .team-member {
+  text-align: center;
+}
+#team .team-member .member-img {
+  border: solid 8px #FFF;
+}
+#team .team-member h3.name {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+#team .team-member p.job {
+  font-family: "Roboto Slab";
+}
+#team .team-member ul.social-network {
+  list-style: none;
+}
+#team .team-member ul.social-network li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #444444;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: background-color 0.5s linear 0s;
+  transition: background-color 0.5s linear 0s;
+}
+#team .team-member ul.social-network li a {
+  color: #FFF;
+  font-size: 1.3em;
+  line-height: 40px;
+}
+#team .team-member ul.social-network li:hover {
+  background-color: #fec503;
+}
+#team .text-team {
+  margin: 50px 0;
+}
+#team .text-team p {
+  font-family: "Roboto Slab";
+  font-size: 1.2em;
+  color: #808577;
+}
+
+.logos {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#contact {
+  background-color: #222;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+#contact .title-contact {
+  text-align: center;
+  color: #FFF;
+  margin: 7% 0;
+}
+#contact .title-contact h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+#contact .title-contact p {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1.2em;
+  color: #444;
+}
+#contact form .form-contact {
+  border-style: none;
+  border-radius: 3px;
+  height: 60px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+#contact form .form-message {
+  border-style: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  padding: 20px;
+}
+#contact form .btn-send {
+  text-align: center;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+#contact form .bt-send {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: #fed136;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+}
+#contact form .bt-send:hover {
+  background-color: #fec503;
+}
+
+footer {
+  font-family: "Montserrat";
+}
+footer .content-footer {
+  padding: 25px 0;
+  text-align: center;
+}
+footer .content-footer span.copyright {
+  line-height: 40px;
+}
+footer .content-footer .social-footer ul {
+  list-style: none;
+}
+footer .content-footer .social-footer ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 0 5px;
+  background-color: #444444;
+  border-radius: 100%;
+  -webkit-transition: background-color 0.5s linear 0s;
+  transition: background-color 0.5s linear 0s;
+}
+footer .content-footer .social-footer ul li a {
+  color: #FFF;
+  font-size: 1.3em;
+  line-height: 40px;
+}
+footer .content-footer .social-footer ul li:hover {
+  background-color: #fed136;
+}
+footer .content-footer .terms {
+  line-height: 40px;
+}
+footer .content-footer .terms ul {
+  list-style: none;
+}
+footer .content-footer .terms ul li {
+  display: inline-block;
+}
+footer .content-footer .terms ul li a {
+  color: #fed136;
+  padding: 5px;
+}
+
+@media (max-width: 979px) {
+  header .bt-menu {
+    display: block;
+    width: 100%;
+    background-color: #222;
+    padding: 20px;
+    position: fixed;
+    z-index: 4000;
+  }
+  header .bt-menu .menu-btn {
+    color: #FAFAFA;
+    padding: 20px;
+    font-size: 2em;
+    -webkit-transition: color 0.5s linear 0s;
+    transition: color 0.5s linear 0s;
+  }
+  header .bt-menu .menu-btn:hover {
+    text-decoration: none;
+    color: #fec503;
+  }
+  header nav {
+    position: static;
+  }
+  header nav h1.brand a {
+    display: none;
+  }
+  header nav ul.navigation {
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    left: -100%;
+    background-color: #222;
+    z-index: 4000;
+  }
+  header nav ul.navigation li {
+    display: block;
+    margin-left: 30px;
+  }
+
+  #about .img-history {
+    float: left;
+  }
+  #about .img-history .img-circle {
+    width: 60%;
+    height: 60%;
+  }
+  #about ul.history li {
+    float: left;
+  }
+  #about ul.history .history-panel {
+    float: right;
+    position: relative;
+    bottom: 180px;
+    width: 80%;
+    text-align: left;
+    padding: 0 10px 0 100px;
+  }
+  #about ul.history:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 120px;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    margin-left: -1.5px;
+  }
+}
+@media (max-width: 765px) {
+  #portfolio .portfolio-item .portfolio-caption {
+    width: 100%;
+  }
+
+  .portfolio-item {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  form .form-contact {
+    width: 100%;
+  }
+  form .form-message {
+    width: 100%;
+  }
+}
